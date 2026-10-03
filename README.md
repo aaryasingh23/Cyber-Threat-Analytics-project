@@ -4,6 +4,8 @@ An end-to-end, reproducible security analytics pipeline. It takes raw UNSW-NB15 
 cleaning, a SQL database, threat-pattern analysis, anomaly detection, supervised ML and risk scoring, then
 produces Power BI–ready data and a SOC-style insights report.
 
+**🔴 Live dashboard: [cyber-threat-analytics-project.vercel.app](https://cyber-threat-analytics-project.vercel.app/)**
+
 > **Dataset version used:** the official **train/test release** (175,341 + 82,332 flows, 45 columns).
 > It contains **no source/destination IPs, ports or timestamps**. IP-level risk, port-scan counts and
 > hourly/daily trends are therefore replaced with documented substitutes (protocol/service/state segments,
@@ -114,11 +116,12 @@ can be blocked. That's why `scipy==1.15.3` is pinned, and why notebooks run thro
 
 ## Live dashboard
 
-**Live demo:** _add your Vercel URL here after deploying_
+**Live demo:** https://cyber-threat-analytics-project.vercel.app/
 
-The dashboard is a static page (`dashboard/index.html`), so Vercel serves it with no build step
-(`vercel.json` sets `outputDirectory` to `dashboard`). To deploy: open vercel.com → **Add New → Project** →
-import this GitHub repo → keep the defaults → **Deploy**.
+The dashboard is a static page (`dashboard/index.html`) deployed on Vercel with no build step:
+`vercel.json` serves the `dashboard/` folder, and `.vercelignore` keeps the Python pipeline out of the
+deployment. Every push to `main` redeploys automatically. To redeploy elsewhere: open vercel.com →
+**Add New → Project** → import this repo → **Deploy** (settings come from `vercel.json`).
 
 ## Web dashboard
 
