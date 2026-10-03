@@ -1,0 +1,233 @@
+{
+  "chi_square": {
+    "attack_cat_vs_proto": {
+      "chi2": 232696.97646868168,
+      "p_value": 0.0,
+      "dof": 72,
+      "cramers_v": 0.335981929422424
+    },
+    "attack_cat_vs_service": {
+      "chi2": 237965.04125053828,
+      "p_value": 0.0,
+      "dof": 108,
+      "cramers_v": 0.3203324008807305
+    }
+  },
+  "mann_whitney": [
+    {
+      "feature": "sbytes",
+      "median_attack": 200.0,
+      "median_normal": 1040.0,
+      "U": 4559982708.0,
+      "p_value": 0.0,
+      "rank_biserial": -0.4045,
+      "effect": "medium"
+    },
+    {
+      "feature": "dbytes",
+      "median_attack": 0.0,
+      "median_normal": 642.0,
+      "U": 3576252762.5,
+      "p_value": 0.0,
+      "rank_biserial": -0.533,
+      "effect": "large"
+    },
+    {
+      "feature": "dur",
+      "median_attack": 9.000000318337698e-06,
+      "median_normal": 0.053938498720526695,
+      "U": 5299602874.5,
+      "p_value": 0.0,
+      "rank_biserial": -0.3079,
+      "effect": "medium"
+    },
+    {
+      "feature": "spkts",
+      "median_attack": 2.0,
+      "median_normal": 10.0,
+      "U": 4584878347.0,
+      "p_value": 0.0,
+      "rank_biserial": -0.4012,
+      "effect": "medium"
+    },
+    {
+      "feature": "dpkts",
+      "median_attack": 0.0,
+      "median_normal": 8.0,
+      "U": 3605667052.5,
+      "p_value": 0.0,
+      "rank_biserial": -0.5291,
+      "effect": "large"
+    },
+    {
+      "feature": "rate",
+      "median_attack": 111111.1072,
+      "median_normal": 642.3257425,
+      "U": 10537724880.5,
+      "p_value": 0.0,
+      "rank_biserial": 0.3762,
+      "effect": "medium"
+    },
+    {
+      "feature": "sttl",
+      "median_attack": 254.0,
+      "median_normal": 31.0,
+      "U": 12763552070.5,
+      "p_value": 0.0,
+      "rank_biserial": 0.6668,
+      "effect": "large"
+    },
+    {
+      "feature": "smean",
+      "median_attack": 65.0,
+      "median_normal": 73.0,
+      "U": 7069339572.5,
+      "p_value": 6.365347275737157e-234,
+      "rank_biserial": -0.0768,
+      "effect": "negligible"
+    }
+  ],
+  "state": [
+    {
+      "state": "FIN",
+      "flows": 117164,
+      "attack_rate": 0.4764006008671606
+    },
+    {
+      "state": "INT",
+      "flows": 116438,
+      "attack_rate": 0.9123997320462393
+    },
+    {
+      "state": "CON",
+      "flows": 20134,
+      "attack_rate": 0.06963345584583291
+    },
+    {
+      "state": "REQ",
+      "flows": 3833,
+      "attack_rate": 0.31333159405165667
+    },
+    {
+      "state": "RST",
+      "flows": 84,
+      "attack_rate": 0.14285714285714285
+    }
+  ],
+  "duration_bins": [
+    {
+      "dur_bin": "0s",
+      "flows": 3607,
+      "attack_rate": 0.01774327696146382
+    },
+    {
+      "dur_bin": "<1ms",
+      "flows": 112982,
+      "attack_rate": 0.9129684374502133
+    },
+    {
+      "dur_bin": "1-10ms",
+      "flows": 18109,
+      "attack_rate": 0.0012148655364735766
+    },
+    {
+      "dur_bin": "10-100ms",
+      "flows": 18471,
+      "attack_rate": 0.011748145741973906
+    },
+    {
+      "dur_bin": "0.1-1s",
+      "flows": 59503,
+      "attack_rate": 0.5599717661294389
+    },
+    {
+      "dur_bin": "1-10s",
+      "flows": 39420,
+      "attack_rate": 0.6100202942668697
+    },
+    {
+      "dur_bin": ">=10s",
+      "flows": 5581,
+      "attack_rate": 0.6905572478050529
+    }
+  ],
+  "ttl": [
+    {
+      "sttl": 254,
+      "dttl": 0,
+      "flows": 115660,
+      "attack_rate": 0.9240446135223932
+    },
+    {
+      "sttl": 31,
+      "dttl": 29,
+      "flows": 56112,
+      "attack_rate": 0.0
+    },
+    {
+      "sttl": 254,
+      "dttl": 252,
+      "flows": 52037,
+      "attack_rate": 0.6651997617080154
+    },
+    {
+      "sttl": 62,
+      "dttl": 252,
+      "flows": 27879,
+      "attack_rate": 0.7741669356863589
+    },
+    {
+      "sttl": 0,
+      "dttl": 0,
+      "flows": 4210,
+      "attack_rate": 0.08646080760095012
+    },
+    {
+      "sttl": 254,
+      "dttl": 60,
+      "flows": 1092,
+      "attack_rate": 0.9340659340659341
+    }
+  ],
+  "top_label_correlates": {
+    "sttl": 0.6623448904505652,
+    "ct_state_ttl": 0.5865390272703446,
+    "dload": -0.5819861251213538,
+    "dmean": -0.51422123656887,
+    "dbytes": -0.4643947894776068
+  },
+  "findings": [
+    {
+      "figure": "05_profile_boxplots",
+      "text": "Generic attacks are tiny and fast: median sbytes 114 B and median duration 0.000008s vs 1040 B / 0.054s for normal flows. Exploits carry the heaviest payloads among attacks (median sbytes 842 B). Volume alone does not separate attacks: several attack classes overlap heavily with normal traffic."
+    },
+    {
+      "figure": "05_proto_service_heatmap",
+      "text": "DNS is dominated by Generic attacks (83.4% of DNS flows). The 'unas' protocol is 100% malicious (15,599 flows, mostly Exploits 42%, DoS 34%, Fuzzers 7%). 'other' (rare) protocols are almost entirely attacks (99.6%), while ARP is entirely normal."
+    },
+    {
+      "figure": "05_state_attack_rate",
+      "text": "INT (interrupted/no-reply) connections have a 91.2% attack rate across 116,438 flows, versus 7.0% for CON (established, two-way) flows. Half-open / unanswered connections are the strongest single state signal."
+    },
+    {
+      "figure": "05_duration_bins",
+      "text": "No timestamps exist in this release, so hourly/daily spikes cannot be measured. As a substitute, sub-millisecond flows (112,982) are 91.3% attacks, while 1-100 ms flows are almost all normal (0.1% and 1.2%) - a burst-like, automated signature."
+    },
+    {
+      "figure": "05_recon_context",
+      "text": "Generic attacks are highly repetitive: mean ct_dst_src_ltm 24.0 vs 3.9 for normal (same host pair hammered repeatedly). Reconnaissance flows, by contrast, show LOW repetition (2.1) - consistent with probes spread across many targets. Without IPs/ports, true distinct-port scan counts cannot be computed."
+    },
+    {
+      "figure": "05_ttl_fingerprint",
+      "text": "sttl/dttl = 254/0 covers 115,660 flows with a 92.4% attack rate, while 31/29 (56,112 flows) is 0% attacks. These TTLs reflect the lab's attack-generator topology, so models will exploit them - a known UNSW-NB15 artefact that will not transfer to other networks."
+    },
+    {
+      "figure": "05_correlation_heatmap",
+      "text": "Strongest monotonic correlates of the attack label: sttl (+0.66), ct_state_ttl (+0.59), dload (-0.58), dmean (-0.51), dbytes (-0.46). Byte/packet counters are strongly inter-correlated (redundant), which matters for linear models."
+    },
+    {
+      "figure": "statistical_tests",
+      "text": "Chi-square shows attack type depends strongly on protocol (chi2=232,697, dof=72, p~0 (below float precision), Cramer's V=0.34) and service (Cramer's V=0.32). Mann-Whitney U: attack flows send fewer bytes than normal flows (median sbytes 200 vs 1040, rank-biserial -0.40) and receive far fewer (dbytes r=-0.53, large). With n=257,673 every p-value is ~0, so effect sizes - not p-values - indicate practical importance."
+    }
+  ]
+}

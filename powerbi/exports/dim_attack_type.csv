@@ -1,0 +1,11 @@
+attack_cat,severity_weight,severity_level,description
+Normal,0.0,None,Benign traffic
+Worms,1.0,Critical,Self-replicating malware that spreads to other hosts
+Backdoor,0.95,Critical,Bypasses authentication to give covert persistent access
+Shellcode,0.9,Critical,Payload used to exploit a vulnerability and gain a shell
+Exploits,0.85,High,"Exploitation of known vulnerabilities (OS, apps, services)"
+DoS,0.75,High,Attempts to make a service or host unavailable
+Generic,0.6,Medium,Technique that works against block ciphers regardless of structure
+Reconnaissance,0.5,Medium,Scanning / probing to gather information about targets
+Analysis,0.45,Low,"Port scans, spam and HTML-file penetration attempts"
+Fuzzers,0.4,Low,Feeding random data to crash or find bugs in programs/networks

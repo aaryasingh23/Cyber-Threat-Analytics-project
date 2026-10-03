@@ -1,0 +1,11 @@
+attack_cat,high_rate_flows,pct_of_high_rate,rate_threshold
+Generic,4236,54.08,333333.3
+Exploits,887,11.32,333333.3
+DoS,688,8.78,333333.3
+Normal,685,8.75,333333.3
+Fuzzers,604,7.71,333333.3
+Reconnaissance,471,6.01,333333.3
+Analysis,107,1.37,333333.3
+Backdoor,90,1.15,333333.3
+Shellcode,64,0.82,333333.3
+Worms,1,0.01,333333.3

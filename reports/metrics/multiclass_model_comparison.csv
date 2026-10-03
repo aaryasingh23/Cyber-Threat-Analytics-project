@@ -1,0 +1,4 @@
+model,macro_f1,weighted_f1,macro_recall,accuracy
+RandomForest,0.5254,0.7694,0.599,0.726
+LightGBM,0.5171,0.7517,0.6138,0.701
+LogisticRegression,0.3647,0.6885,0.5692,0.6235

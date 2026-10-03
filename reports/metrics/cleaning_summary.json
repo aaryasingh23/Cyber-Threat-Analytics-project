@@ -1,0 +1,17 @@
+{
+  "rows_before": 257673,
+  "rows_after": 257673,
+  "cols_after": 61,
+  "memory_mb_before": 49.2,
+  "memory_mb_after": 46.4,
+  "duplicates_flagged": 93824,
+  "duplicates_by_split": {
+    "test": 26387,
+    "train": 67437
+  },
+  "test_rows_seen_in_train": 4247,
+  "invalid_ftp_login": 26,
+  "zero_duration": 3607,
+  "label_mismatch": 0,
+  "negatives": 0
+}

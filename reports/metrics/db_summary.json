@@ -1,0 +1,6 @@
+{
+  "db_url": "sqlite:///C%3A/Users/anmol/OneDrive/Desktop/project 1/data/processed/nb15_threat.db",
+  "rows_loaded": 257673,
+  "attack_rows": 164673,
+  "queries_run": 19
+}

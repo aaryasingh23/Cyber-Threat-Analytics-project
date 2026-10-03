@@ -1,0 +1,13 @@
+service,attack_flows,dominant_attack,dominant_flows,dominant_pct
+dns,58100,Generic,57278,98.6
+http,17650,Exploits,11481,65.0
+smtp,4695,Exploits,4162,88.6
+ftp,3004,Exploits,2115,70.4
+ftp-data,1890,Exploits,1876,99.3
+pop3,1524,Exploits,1435,94.2
+dhcp,120,Exploits,64,53.3
+snmp,108,Reconnaissance,80,74.1
+ssl,86,Exploits,52,60.5
+irc,30,Exploits,12,40.0
+radius,17,Exploits,9,52.9
+ssh,15,Exploits,14,93.3

@@ -1,0 +1,11 @@
+attack_cat,flows,hot_destination_flows,hot_destination_pct,avg_pkt_rate,avg_sbytes
+Generic,58871,38698,65.73,209833.0,446.0
+Fuzzers,24246,846,3.49,67276.0,6764.0
+Normal,93000,2811,3.02,19588.0,4092.0
+Shellcode,1511,9,0.6,99146.0,533.0
+Worms,174,1,0.57,20874.0,2256.0
+Reconnaissance,13987,68,0.49,99719.0,751.0
+Exploits,44525,197,0.44,67963.0,29655.0
+DoS,16353,32,0.2,146166.0,18361.0
+Backdoor,2329,3,0.13,149210.0,1521.0
+Analysis,2677,0,0.0,147808.0,840.0

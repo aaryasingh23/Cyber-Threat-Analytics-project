@@ -1,0 +1,10 @@
+attack_cat,scan_like_flows,pct_of_scan_like,avg_pair_conns,avg_spkts
+Normal,1711,55.93,21.3,4.4
+Exploits,372,12.16,16.2,10.2
+DoS,319,10.43,14.8,6.4
+Generic,294,9.61,23.1,2.4
+Fuzzers,142,4.64,13.0,4.0
+Reconnaissance,135,4.41,18.4,4.2
+Backdoor,42,1.37,15.4,8.6
+Analysis,37,1.21,14.1,2.0
+Shellcode,7,0.23,21.6,2.0

@@ -1,0 +1,126 @@
+{
+  "best_model": "IsolationForest",
+  "comparison": [
+    {
+      "model": "IsolationForest",
+      "precision": 0.913,
+      "recall_attack": 0.6631,
+      "f1": 0.7682,
+      "roc_auc": 0.8684,
+      "pr_auc": 0.8945,
+      "fpr": 0.0775,
+      "accuracy": 0.7797,
+      "tp": 30058,
+      "fp": 2866,
+      "tn": 34134,
+      "fn": 15274,
+      "threshold": 0.5178
+    },
+    {
+      "model": "LocalOutlierFactor",
+      "precision": 0.8969,
+      "recall_attack": 0.5997,
+      "f1": 0.7188,
+      "roc_auc": 0.7873,
+      "pr_auc": 0.8125,
+      "fpr": 0.0845,
+      "accuracy": 0.7416,
+      "tp": 27185,
+      "fp": 3125,
+      "tn": 33875,
+      "fn": 18147,
+      "threshold": 1.4928
+    },
+    {
+      "model": "Autoencoder",
+      "precision": 0.6379,
+      "recall_attack": 0.1532,
+      "f1": 0.247,
+      "roc_auc": 0.6959,
+      "pr_auc": 0.6663,
+      "fpr": 0.1065,
+      "accuracy": 0.4859,
+      "tp": 6943,
+      "fp": 3941,
+      "tn": 33059,
+      "fn": 38389,
+      "threshold": 0.5157
+    },
+    {
+      "model": "OneClassSVM",
+      "precision": 0.7183,
+      "recall_attack": 0.2016,
+      "f1": 0.3149,
+      "roc_auc": 0.6273,
+      "pr_auc": 0.6307,
+      "fpr": 0.0969,
+      "accuracy": 0.5169,
+      "tp": 9140,
+      "fp": 3584,
+      "tn": 33416,
+      "fn": 36192,
+      "threshold": -136.9301
+    }
+  ],
+  "samples": {
+    "lof": 20000,
+    "ocsvm": 10000,
+    "autoencoder": 20000
+  },
+  "fit_normals": 44800,
+  "val_normals": 11200,
+  "test_flows": 82332,
+  "n_features": 61,
+  "detection_by_category": [
+    {
+      "attack_cat": "Generic",
+      "flows": 18871,
+      "flag_rate": 0.9674103121191245
+    },
+    {
+      "attack_cat": "Backdoor",
+      "flows": 583,
+      "flag_rate": 0.9159519725557461
+    },
+    {
+      "attack_cat": "Analysis",
+      "flows": 677,
+      "flag_rate": 0.9158050221565731
+    },
+    {
+      "attack_cat": "DoS",
+      "flows": 4089,
+      "flag_rate": 0.7735387625336269
+    },
+    {
+      "attack_cat": "Exploits",
+      "flows": 11132,
+      "flag_rate": 0.4784405318002156
+    },
+    {
+      "attack_cat": "Fuzzers",
+      "flows": 6062,
+      "flag_rate": 0.2835697789508413
+    },
+    {
+      "attack_cat": "Worms",
+      "flows": 44,
+      "flag_rate": 0.20454545454545456
+    },
+    {
+      "attack_cat": "Reconnaissance",
+      "flows": 3496,
+      "flag_rate": 0.119279176201373
+    },
+    {
+      "attack_cat": "Normal",
+      "flows": 37000,
+      "flag_rate": 0.07745945945945946
+    },
+    {
+      "attack_cat": "Shellcode",
+      "flows": 378,
+      "flag_rate": 0.037037037037037035
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+attack_cat,severity_level,severity_weight,description,flows,avg_sbytes,avg_dur,avg_spkts
+Analysis,Low,0.45,"Port scans, spam and HTML-file penetration attempts",2677,839.6,1.4169,5.4
+Backdoor,Critical,0.95,Bypasses authentication to give covert persistent access,2329,1520.9,2.2246,6.8
+DoS,High,0.75,Attempts to make a service or host unavailable,16353,18360.8,2.4488,24.1
+Exploits,High,0.85,"Exploitation of known vulnerabilities (OS, apps, services)",44525,29655.0,2.1229,34.0
+Fuzzers,Low,0.4,Feeding random data to crash or find bugs in programs/networks,24246,6764.3,2.6739,13.8
+Generic,Medium,0.6,Technique that works against block ciphers regardless of structure,58871,446.3,0.0612,2.6
+Normal,None,0.0,Benign traffic,93000,4092.4,1.0154,27.6
+Reconnaissance,Medium,0.5,Scanning / probing to gather information about targets,13987,751.4,1.005,7.0
+Shellcode,Critical,0.9,Payload used to exploit a vulnerability and gain a shell,1511,532.8,0.3629,6.0
+Worms,Critical,1.0,Self-replicating malware that spreads to other hosts,174,2255.8,1.3333,18.2

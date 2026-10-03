@@ -1,0 +1,139 @@
+{
+  "shape": [
+    257673,
+    46
+  ],
+  "memory_mb": 49.2,
+  "dtypes": {
+    "int8": 13,
+    "int16": 11,
+    "float32": 6,
+    "str": 5,
+    "float64": 5,
+    "int32": 4,
+    "int64": 2
+  },
+  "null_total": 0,
+  "nulls_by_col": {},
+  "duplicate_rows_within_split": 93824,
+  "rows_by_split": {
+    "train": 175341,
+    "test": 82332
+  },
+  "traffic_counts": {
+    "Attack": 164673,
+    "Normal": 93000
+  },
+  "attack_share_overall": 0.6391,
+  "attack_share_by_split": {
+    "test": 0.5506,
+    "train": 0.6806
+  },
+  "attack_cat_counts": {
+    "Normal": 93000,
+    "Generic": 58871,
+    "Exploits": 44525,
+    "Fuzzers": 24246,
+    "DoS": 16353,
+    "Reconnaissance": 13987,
+    "Analysis": 2677,
+    "Backdoor": 2329,
+    "Shellcode": 1511,
+    "Worms": 174
+  },
+  "n_proto": 133,
+  "n_service": 13,
+  "n_state": 11,
+  "top_proto": {
+    "tcp": 123041,
+    "udp": 92701,
+    "unas": 15599,
+    "arp": 3846,
+    "ospf": 3271,
+    "sctp": 1474,
+    "any": 396,
+    "gre": 313,
+    "rsvp": 264,
+    "ipv6": 262
+  },
+  "service_counts": {
+    "-": 141321,
+    "dns": 68661,
+    "http": 27011,
+    "smtp": 6909,
+    "ftp-data": 5391,
+    "ftp": 4980,
+    "pop3": 1528,
+    "ssh": 1506,
+    "dhcp": 120,
+    "snmp": 109,
+    "ssl": 86,
+    "irc": 30,
+    "radius": 21
+  },
+  "state_counts": {
+    "FIN": 117164,
+    "INT": 116438,
+    "CON": 20134,
+    "REQ": 3833,
+    "RST": 84,
+    "ECO": 12,
+    "ACC": 4,
+    "PAR": 1,
+    "URN": 1,
+    "no": 1,
+    "CLO": 1
+  },
+  "numeric_summary": {
+    "dur": {
+      "count": 257673.0,
+      "mean": 1.247,
+      "std": 5.974,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.004,
+      "75%": 0.686,
+      "max": 60.0
+    },
+    "sbytes": {
+      "count": 257673.0,
+      "mean": 8572.952,
+      "std": 173773.881,
+      "min": 24.0,
+      "25%": 114.0,
+      "50%": 528.0,
+      "75%": 1362.0,
+      "max": 14355774.0
+    },
+    "dbytes": {
+      "count": 257673.0,
+      "mean": 14387.288,
+      "std": 146199.282,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 178.0,
+      "75%": 1064.0,
+      "max": 14657531.0
+    },
+    "spkts": {
+      "count": 257673.0,
+      "mean": 19.777,
+      "std": 135.947,
+      "min": 1.0,
+      "25%": 2.0,
+      "50%": 4.0,
+      "75%": 12.0,
+      "max": 10646.0
+    },
+    "dpkts": {
+      "count": 257673.0,
+      "mean": 18.515,
+      "std": 111.986,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 2.0,
+      "75%": 10.0,
+      "max": 11018.0
+    }
+  }
+}

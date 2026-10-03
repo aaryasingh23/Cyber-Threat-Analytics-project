@@ -1,0 +1,20 @@
+kpi,value,unit
+Total flows (train+test),257673,count
+Attack flows,164673,count
+Attack rate %,63.91,percent
+Flows risk-scored (test split),82332,count
+Critical-risk flows,36870,count
+High-risk flows,12408,count
+Critical + High share %,59.85,percent
+High/Critical-risk segments,139,count
+Top attack type,Generic,text
+Top attack type flows,58871,count
+Top targeted service,dns,text
+Top targeted service attack flows,58100,count
+Detection rate (recall) - LightGBM,97.29,percent
+False positive rate - LightGBM,17.91,percent
+PR-AUC - LightGBM,0.9892,ratio
+Anomaly detector recall - IsolationForest,66.31,percent
+Peak attack hour,N/A - no timestamps in train/test release,text
+Top targeted port,N/A - no ports in train/test release,text
+Unique attacking IPs / targeted hosts,N/A - no IPs in train/test release,text

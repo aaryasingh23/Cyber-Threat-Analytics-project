@@ -1,0 +1,10 @@
+attack_cat,severity_level,severity_weight,flows,pct_of_attacks,weighted_impact
+Exploits,High,0.85,44525,27.04,37846.3
+Generic,Medium,0.6,58871,35.75,35322.6
+DoS,High,0.75,16353,9.93,12264.8
+Fuzzers,Low,0.4,24246,14.72,9698.4
+Reconnaissance,Medium,0.5,13987,8.49,6993.5
+Backdoor,Critical,0.95,2329,1.41,2212.5
+Shellcode,Critical,0.9,1511,0.92,1359.9
+Analysis,Low,0.45,2677,1.63,1204.7
+Worms,Critical,1.0,174,0.11,174.0

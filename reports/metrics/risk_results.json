@@ -1,0 +1,395 @@
+{
+  "weights": {
+    "anomaly": 0.4,
+    "model_prob": 0.3,
+    "severity": 0.2,
+    "rules": 0.1
+  },
+  "rule_thresholds": {
+    "rate_p99": 333333.3215,
+    "ct_srv_src_p99": 35.0,
+    "ct_dst_src_ltm_p99": 35.0,
+    "common_protos": [
+      "arp",
+      "ospf",
+      "tcp",
+      "udp"
+    ]
+  },
+  "bucket_distribution": [
+    {
+      "risk_bucket": "Low",
+      "flows": 14746,
+      "true_attacks": 166,
+      "avg_risk": 13.804447307744473,
+      "attack_precision": 0.0113,
+      "pct_flows": 17.91
+    },
+    {
+      "risk_bucket": "Medium",
+      "flows": 18308,
+      "true_attacks": 1996,
+      "avg_risk": 36.18922001310902,
+      "attack_precision": 0.109,
+      "pct_flows": 22.24
+    },
+    {
+      "risk_bucket": "High",
+      "flows": 12408,
+      "true_attacks": 6520,
+      "avg_risk": 61.27567778852353,
+      "attack_precision": 0.5255,
+      "pct_flows": 15.07
+    },
+    {
+      "risk_bucket": "Critical",
+      "flows": 36870,
+      "true_attacks": 36650,
+      "avg_risk": 83.27807106048277,
+      "attack_precision": 0.994,
+      "pct_flows": 44.78
+    }
+  ],
+  "rule_flag_rates_by_label": [
+    {
+      "label": 0,
+      "flag_high_pkt_rate": 0.011243243243243243,
+      "flag_rare_proto": 0.0008108108108108108,
+      "flag_burst_context": 0.008216216216216217
+    },
+    {
+      "label": 1,
+      "flag_high_pkt_rate": 0.04032471543280685,
+      "flag_rare_proto": 0.17925527221388865,
+      "flag_burst_context": 0.09931174446307245
+    }
+  ],
+  "top_segments": [
+    {
+      "proto": "udp",
+      "service": "dns",
+      "state": "INT",
+      "flows": 18263,
+      "max_risk": 88.63,
+      "mean_risk": 82.48,
+      "p95_risk": 85.25,
+      "critical_flows": 18235,
+      "predicted_attack_flows": 18236,
+      "true_attack_flows": 18234,
+      "distinct_pred_attack_types": 6,
+      "segment": "udp/dns/INT",
+      "segment_risk_bucket": "Critical"
+    },
+    {
+      "proto": "tcp",
+      "service": "http",
+      "state": "FIN",
+      "flows": 8270,
+      "max_risk": 88.84,
+      "mean_risk": 60.08,
+      "p95_risk": 84.74,
+      "critical_flows": 3524,
+      "predicted_attack_flows": 5147,
+      "true_attack_flows": 4269,
+      "distinct_pred_attack_types": 8,
+      "segment": "tcp/http/FIN",
+      "segment_risk_bucket": "High"
+    },
+    {
+      "proto": "unas",
+      "service": "none",
+      "state": "INT",
+      "flows": 3515,
+      "max_risk": 91.49,
+      "mean_risk": 87.14,
+      "p95_risk": 88.37,
+      "critical_flows": 3515,
+      "predicted_attack_flows": 3515,
+      "true_attack_flows": 3515,
+      "distinct_pred_attack_types": 3,
+      "segment": "unas/none/INT",
+      "segment_risk_bucket": "Critical"
+    },
+    {
+      "proto": "udp",
+      "service": "none",
+      "state": "INT",
+      "flows": 6362,
+      "max_risk": 88.83,
+      "mean_risk": 64.89,
+      "p95_risk": 81.07,
+      "critical_flows": 1871,
+      "predicted_attack_flows": 4864,
+      "true_attack_flows": 2865,
+      "distinct_pred_attack_types": 7,
+      "segment": "udp/none/INT",
+      "segment_risk_bucket": "High"
+    },
+    {
+      "proto": "tcp",
+      "service": "none",
+      "state": "FIN",
+      "flows": 25629,
+      "max_risk": 86.5,
+      "mean_risk": 35.0,
+      "p95_risk": 76.82,
+      "critical_flows": 1587,
+      "predicted_attack_flows": 10358,
+      "true_attack_flows": 7985,
+      "distinct_pred_attack_types": 6,
+      "segment": "tcp/none/FIN",
+      "segment_risk_bucket": "Medium"
+    },
+    {
+      "proto": "tcp",
+      "service": "smtp",
+      "state": "FIN",
+      "flows": 1836,
+      "max_risk": 86.73,
+      "mean_risk": 65.34,
+      "p95_risk": 86.37,
+      "critical_flows": 1201,
+      "predicted_attack_flows": 1204,
+      "true_attack_flows": 1204,
+      "distinct_pred_attack_types": 5,
+      "segment": "tcp/smtp/FIN",
+      "segment_risk_bucket": "High"
+    },
+    {
+      "proto": "tcp",
+      "service": "ftp",
+      "state": "FIN",
+      "flows": 1541,
+      "max_risk": 86.78,
+      "mean_risk": 60.92,
+      "p95_risk": 86.2,
+      "critical_flows": 524,
+      "predicted_attack_flows": 913,
+      "true_attack_flows": 788,
+      "distinct_pred_attack_types": 4,
+      "segment": "tcp/ftp/FIN",
+      "segment_risk_bucket": "High"
+    },
+    {
+      "proto": "ospf",
+      "service": "none",
+      "state": "INT",
+      "flows": 524,
+      "max_risk": 86.55,
+      "mean_risk": 84.55,
+      "p95_risk": 86.26,
+      "critical_flows": 523,
+      "predicted_attack_flows": 523,
+      "true_attack_flows": 523,
+      "distinct_pred_attack_types": 4,
+      "segment": "ospf/none/INT",
+      "segment_risk_bucket": "Critical"
+    },
+    {
+      "proto": "tcp",
+      "service": "ftp-data",
+      "state": "FIN",
+      "flows": 1390,
+      "max_risk": 86.4,
+      "mean_risk": 45.46,
+      "p95_risk": 84.72,
+      "critical_flows": 445,
+      "predicted_attack_flows": 447,
+      "true_attack_flows": 447,
+      "distinct_pred_attack_types": 2,
+      "segment": "tcp/ftp-data/FIN",
+      "segment_risk_bucket": "Medium"
+    },
+    {
+      "proto": "tcp",
+      "service": "pop3",
+      "state": "FIN",
+      "flows": 420,
+      "max_risk": 86.67,
+      "mean_risk": 84.07,
+      "p95_risk": 86.27,
+      "critical_flows": 417,
+      "predicted_attack_flows": 420,
+      "true_attack_flows": 420,
+      "distinct_pred_attack_types": 2,
+      "segment": "tcp/pop3/FIN",
+      "segment_risk_bucket": "Critical"
+    },
+    {
+      "proto": "sctp",
+      "service": "none",
+      "state": "INT",
+      "flows": 205,
+      "max_risk": 88.88,
+      "mean_risk": 86.65,
+      "p95_risk": 88.88,
+      "critical_flows": 205,
+      "predicted_attack_flows": 205,
+      "true_attack_flows": 205,
+      "distinct_pred_attack_types": 3,
+      "segment": "sctp/none/INT",
+      "segment_risk_bucket": "Critical"
+    },
+    {
+      "proto": "sctp",
+      "service": "none",
+      "state": "CON",
+      "flows": 119,
+      "max_risk": 89.86,
+      "mean_risk": 87.87,
+      "p95_risk": 89.86,
+      "critical_flows": 119,
+      "predicted_attack_flows": 119,
+      "true_attack_flows": 119,
+      "distinct_pred_attack_types": 3,
+      "segment": "sctp/none/CON",
+      "segment_risk_bucket": "Critical"
+    },
+    {
+      "proto": "ospf",
+      "service": "none",
+      "state": "REQ",
+      "flows": 152,
+      "max_risk": 85.92,
+      "mean_risk": 73.9,
+      "p95_risk": 85.92,
+      "critical_flows": 115,
+      "predicted_attack_flows": 115,
+      "true_attack_flows": 115,
+      "distinct_pred_attack_types": 5,
+      "segment": "ospf/none/REQ",
+      "segment_risk_bucket": "High"
+    },
+    {
+      "proto": "any",
+      "service": "none",
+      "state": "INT",
+      "flows": 96,
+      "max_risk": 88.86,
+      "mean_risk": 87.2,
+      "p95_risk": 88.86,
+      "critical_flows": 96,
+      "predicted_attack_flows": 96,
+      "true_attack_flows": 96,
+      "distinct_pred_attack_types": 3,
+      "segment": "any/none/INT",
+      "segment_risk_bucket": "Critical"
+    },
+    {
+      "proto": "udp",
+      "service": "none",
+      "state": "CON",
+      "flows": 1611,
+      "max_risk": 86.96,
+      "mean_risk": 30.68,
+      "p95_risk": 82.36,
+      "critical_flows": 96,
+      "predicted_attack_flows": 96,
+      "true_attack_flows": 96,
+      "distinct_pred_attack_types": 3,
+      "segment": "udp/none/CON",
+      "segment_risk_bucket": "Medium"
+    }
+  ],
+  "kpis": [
+    {
+      "kpi": "Total flows (train+test)",
+      "value": 257673,
+      "unit": "count"
+    },
+    {
+      "kpi": "Attack flows",
+      "value": 164673,
+      "unit": "count"
+    },
+    {
+      "kpi": "Attack rate %",
+      "value": 63.91,
+      "unit": "percent"
+    },
+    {
+      "kpi": "Flows risk-scored (test split)",
+      "value": 82332,
+      "unit": "count"
+    },
+    {
+      "kpi": "Critical-risk flows",
+      "value": 36870,
+      "unit": "count"
+    },
+    {
+      "kpi": "High-risk flows",
+      "value": 12408,
+      "unit": "count"
+    },
+    {
+      "kpi": "Critical + High share %",
+      "value": 59.85,
+      "unit": "percent"
+    },
+    {
+      "kpi": "High/Critical-risk segments",
+      "value": 139,
+      "unit": "count"
+    },
+    {
+      "kpi": "Top attack type",
+      "value": "Generic",
+      "unit": "text"
+    },
+    {
+      "kpi": "Top attack type flows",
+      "value": 58871,
+      "unit": "count"
+    },
+    {
+      "kpi": "Top targeted service",
+      "value": "dns",
+      "unit": "text"
+    },
+    {
+      "kpi": "Top targeted service attack flows",
+      "value": 58100,
+      "unit": "count"
+    },
+    {
+      "kpi": "Detection rate (recall) - LightGBM",
+      "value": 97.29,
+      "unit": "percent"
+    },
+    {
+      "kpi": "False positive rate - LightGBM",
+      "value": 17.91,
+      "unit": "percent"
+    },
+    {
+      "kpi": "PR-AUC - LightGBM",
+      "value": 0.9892,
+      "unit": "ratio"
+    },
+    {
+      "kpi": "Anomaly detector recall - IsolationForest",
+      "value": 66.31,
+      "unit": "percent"
+    },
+    {
+      "kpi": "Peak attack hour",
+      "value": "N/A - no timestamps in train/test release",
+      "unit": "text"
+    },
+    {
+      "kpi": "Top targeted port",
+      "value": "N/A - no ports in train/test release",
+      "unit": "text"
+    },
+    {
+      "kpi": "Unique attacking IPs / targeted hosts",
+      "value": "N/A - no IPs in train/test release",
+      "unit": "text"
+    }
+  ],
+  "risk_auc_vs_label": {
+    "roc_auc": 0.9732633114010507,
+    "pr_auc": 0.9804613238270642
+  }
+}

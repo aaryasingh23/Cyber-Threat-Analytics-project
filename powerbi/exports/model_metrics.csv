@@ -1,0 +1,8 @@
+family,model,precision,recall_attack,f1,roc_auc,pr_auc,fpr,accuracy,tp,fp,tn,fn
+Supervised (binary),LightGBM,0.8694,0.9729,0.9182,0.9854,0.9892,0.1791,0.9046,44105,6627,30373,1227
+Supervised (binary),RandomForest,0.8458,0.9789,0.9075,0.9843,0.9883,0.2187,0.8901,44374,8091,28909,958
+Supervised (binary),LogisticRegression,0.8389,0.9389,0.8861,0.9663,0.9744,0.2209,0.8671,42560,8172,28828,2772
+Anomaly (unsupervised),IsolationForest,0.913,0.6631,0.7682,0.8684,0.8945,0.0775,0.7797,30058,2866,34134,15274
+Anomaly (unsupervised),LocalOutlierFactor,0.8969,0.5997,0.7188,0.7873,0.8125,0.0845,0.7416,27185,3125,33875,18147
+Anomaly (unsupervised),Autoencoder,0.6379,0.1532,0.247,0.6959,0.6663,0.1065,0.4859,6943,3941,33059,38389
+Anomaly (unsupervised),OneClassSVM,0.7183,0.2016,0.3149,0.6273,0.6307,0.0969,0.5169,9140,3584,33416,36192

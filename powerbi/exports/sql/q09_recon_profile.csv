@@ -1,0 +1,11 @@
+attack_cat,flows,avg_src_conns,avg_dst_conns,avg_pair_conns,avg_src_same_dport,avg_srv_dst_conns
+Generic,58871,17.29,17.14,24.0,16.93,24.65
+Analysis,2677,4.96,3.03,5.06,2.67,6.09
+Backdoor,2329,4.76,2.9,4.77,2.56,5.84
+DoS,16353,4.3,2.44,4.69,2.12,4.4
+Fuzzers,24246,3.38,2.53,4.41,2.13,5.44
+Normal,93000,3.98,3.43,3.89,1.78,5.54
+Exploits,44525,3.28,2.0,2.91,1.55,2.7
+Reconnaissance,13987,2.71,1.67,2.1,1.24,1.99
+Shellcode,1511,2.34,1.59,1.35,1.0,1.57
+Worms,174,2.61,1.43,1.22,1.1,1.34
