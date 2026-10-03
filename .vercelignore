@@ -1,0 +1,5 @@
+# Vercel only serves the static dashboard. Everything else (Python pipeline, data,
+# notebooks) is excluded so Vercel never tries to install Python packages.
+/*
+!/dashboard
+!/vercel.json
